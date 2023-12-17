@@ -18,6 +18,7 @@ local options = {
 	wrap = false,
 	scrolloff = 8,
 	sidescrolloff = 8,
+    termguicolors = true,
 }
 
 for option_name, option_value in pairs(options) do
