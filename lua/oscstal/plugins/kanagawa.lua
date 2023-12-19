@@ -4,6 +4,7 @@ return {
         config = function()
             require("kanagawa").setup()
             vim.cmd("colorscheme kanagawa-wave")
-        end
+        end,
+        priority = 1000,
     }
 }
