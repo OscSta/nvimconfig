@@ -1,13 +1,15 @@
 local options = {
 	cmdheight = 2,
 	fileencoding = "utf-8",
+    hlsearch = false,
 	ignorecase = true,
 	mouse = "a",
+    clipboard = "unnamedplus",
 	smartcase = true,
 	smartindent = true,
 	splitbelow = true,
 	splitright = true,
-	timeoutlen = 1000,
+	timeoutlen = 600,
 	updatetime = 500,
 	expandtab = true,
 	shiftwidth = 4,
@@ -19,6 +21,7 @@ local options = {
 	scrolloff = 8,
 	sidescrolloff = 8,
     termguicolors = true,
+    breakindent = true,
 }
 
 for option_name, option_value in pairs(options) do
