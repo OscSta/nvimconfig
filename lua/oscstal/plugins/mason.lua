@@ -1,5 +1,5 @@
 return {
-    { 
+    {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
@@ -9,19 +9,24 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             local lsp_zero = require("lsp-zero")
+            local lspconfig = require("lspconfig")
             lsp_zero.extend_lspconfig()
             require("mason-lspconfig").setup({
                 handlers = {
                     lsp_zero.default_setup,
                     lua_ls = function()
-                        settings = {
-                            diagnostics = {
-                                globals = { "vim" }
+                        lspconfig.lua_ls.setup({
+                            settings = {
+                                Lua = {
+                                    diagnostics = {
+                                        globals = { "vim" }
+                                    }
+                                }
                             }
-                        }
-                    end
+                        })
+                    end,
                 },
             })
-        end,
+        end
     },
 }

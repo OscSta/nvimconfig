@@ -11,6 +11,7 @@ return {
             "confirm_done",
             cmp_autopairs.on_confirm_done()
         )
+        check_ts = true
     end,
     }
 }

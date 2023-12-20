@@ -6,6 +6,9 @@ return {
                 "j-hui/fidget.nvim",
                 opts = {},
             },
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            {"folke/neodev.nvim", opts = {}},
         },
     }
 }
