@@ -11,4 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("oscstal.plugins")
+require("lazy").setup({
+    { import = "oscstal.plugins" },
+    { import = "oscstal.plugins.colortheme" }
+})

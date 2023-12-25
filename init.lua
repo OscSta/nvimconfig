@@ -1,8 +1,8 @@
 -- Set nvim option
-require "oscstal/options"
+require "oscstal.options"
 
 -- Remap keymaps
-require "oscstal/binds"
+require "oscstal.binds"
 
 -- Lazy.nvim plugin manager
-require "oscstal/plugin_lazy"
+require "oscstal.plugin_lazy"

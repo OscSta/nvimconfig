@@ -4,7 +4,7 @@ return {
         main = "ibl",
         event = "VeryLazy",
         opts = {
-            enabled = true
-        } 
+            enabled = true,
+        }
     },
 }
